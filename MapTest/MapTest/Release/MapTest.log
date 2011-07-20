@@ -1,0 +1,32 @@
+﻿Build started 6/19/2011 3:03:48 PM.
+     1>Project "C:\Users\Caleb\Dropbox\C++\MapTest\MapTest\MapTest.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Release\MapTest.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Users\Caleb\SFML2forVS2010\include /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Dynamic2DArray.cpp main.cpp Layer.cpp Map.cpp
+         Dynamic2DArray.cpp
+         main.cpp
+         Layer.cpp
+     1>Layer.cpp(93): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>Layer.cpp(93): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>Layer.cpp(103): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+     1>Layer.cpp(103): warning C4244: 'argument' : conversion from 'int' to 'float', possible loss of data
+         Map.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Caleb\Dropbox\C++\MapTest\Release\MapTest.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\Users\Caleb\SFML2forVS2010\lib "sfml-system-s.lib" "sfml-window-s.lib" "sfml-graphics-s.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\MapTest.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Caleb\Dropbox\C++\MapTest\Release\MapTest.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Caleb\Dropbox\C++\MapTest\Release\MapTest.lib" /MACHINE:X86 Release\Dynamic2DArray.obj
+         Release\main.obj
+         Release\Layer.obj
+         Release\Map.obj
+         Generating code
+         Finished generating code
+         MapTest.vcxproj -> C:\Users\Caleb\Dropbox\C++\MapTest\Release\MapTest.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Caleb\Dropbox\C++\MapTest\Release\MapTest.exe;#1" /manifest Release\MapTest.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Release\MapTest.unsuccessfulbuild".
+         Touching "Release\MapTest.lastbuildstate".
+     1>Done Building Project "C:\Users\Caleb\Dropbox\C++\MapTest\MapTest\MapTest.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:10.40

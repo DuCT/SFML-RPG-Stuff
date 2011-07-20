@@ -1,0 +1,38 @@
+Layer::Layer(std::ifstream &mapFile, std::string &tiles[i], int height, int length, int i)
+{
+	animation = 0;
+	int set;
+
+	aniClock = new sf::Clock;
+	rendImage = new sf::RenderImage;
+	
+	
+	if (!tileImage.LoadFromFile(tiles[i]))
+	{
+		std::cout << "Huh";
+	}
+	tileImage.CreateMaskFromColor(sf::Color(255,174,201));
+	tiles.SetImage(tileImage);
+	tiles.SetOrigin(0,0);
+
+	map = new Dynamic2DArray(height, length);
+	
+	std::string name = "L";
+	char numstr[2];
+	sprintf(numstr, "%d", i+1);
+	std::string result = name + numstr;
+
+	while (mapFile != result || mapFile.good())
+	{
+		for ( int x = 0; x < length; x++)
+		{
+			for (int y = 0; y < height; y++)
+			{
+				mapFile >> set;
+				map->setAtPoint(y,x,set);
+			}
+		}
+	}
+
+	rendImage->Create((32*height), (32*length));
+}
